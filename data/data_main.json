@@ -1,0 +1,397 @@
+[
+    {
+    "code2": "NG",
+    "code3": "NGA",
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "states": [
+      {
+        "code": "AB",
+        "name": "Abia",
+        "subdivision": null
+      },
+      {
+        "code": "FC",
+        "name": "Abuja Federal Capital Territory",
+        "subdivision": null
+      },
+      {
+        "code": "AD",
+        "name": "Adamawa",
+        "subdivision": null
+      },
+      {
+        "code": "AK",
+        "name": "Akwa Ibom",
+        "subdivision": null
+      },
+      {
+        "code": "AN",
+        "name": "Anambra",
+        "subdivision": null
+      },
+      {
+        "code": "BA",
+        "name": "Bauchi",
+        "subdivision": null
+      },
+      {
+        "code": "BY",
+        "name": "Bayelsa",
+        "subdivision": null
+      },
+      {
+        "code": "BE",
+        "name": "Benue",
+        "subdivision": null
+      },
+      {
+        "code": "BO",
+        "name": "Borno",
+        "subdivision": null
+      },
+      {
+        "code": "CR",
+        "name": "Cross River",
+        "subdivision": null
+      },
+      {
+        "code": "DE",
+        "name": "Delta",
+        "subdivision": null
+      },
+      {
+        "code": "EB",
+        "name": "Ebonyi",
+        "subdivision": null
+      },
+      {
+        "code": "ED",
+        "name": "Edo",
+        "subdivision": null
+      },
+      {
+        "code": "EK",
+        "name": "Ekiti",
+        "subdivision": null
+      },
+      {
+        "code": "EN",
+        "name": "Enugu",
+        "subdivision": null
+      },
+      {
+        "code": "GO",
+        "name": "Gombe",
+        "subdivision": null
+      },
+      {
+        "code": "IM",
+        "name": "Imo",
+        "subdivision": null
+      },
+      {
+        "code": "JI",
+        "name": "Jigawa",
+        "subdivision": null
+      },
+      {
+        "code": "KD",
+        "name": "Kaduna",
+        "subdivision": null
+      },
+      {
+        "code": "KN",
+        "name": "Kano",
+        "subdivision": null
+      },
+      {
+        "code": "KT",
+        "name": "Katsina",
+        "subdivision": null
+      },
+      {
+        "code": "KE",
+        "name": "Kebbi",
+        "subdivision": null
+      },
+      {
+        "code": "KO",
+        "name": "Kogi",
+        "subdivision": null
+      },
+      {
+        "code": "KW",
+        "name": "Kwara",
+        "subdivision": null
+      },
+      {
+        "code": "LA",
+        "name": "Lagos",
+        "subdivision": null
+      },
+      {
+        "code": "NA",
+        "name": "Nassarawa",
+        "subdivision": null
+      },
+      {
+        "code": "NI",
+        "name": "Niger",
+        "subdivision": null
+      },
+      {
+        "code": "OG",
+        "name": "Ogun",
+        "subdivision": null
+      },
+      {
+        "code": "ON",
+        "name": "Ondo",
+        "subdivision": null
+      },
+      {
+        "code": "OS",
+        "name": "Osun",
+        "subdivision": null
+      },
+      {
+        "code": "OY",
+        "name": "Oyo",
+        "subdivision": null
+      },
+      {
+        "code": "PL",
+        "name": "Plateau",
+        "subdivision": null
+      },
+      {
+        "code": "RI",
+        "name": "Rivers",
+        "subdivision": null
+      },
+      {
+        "code": "SO",
+        "name": "Sokoto",
+        "subdivision": null
+      },
+      {
+        "code": "TA",
+        "name": "Taraba",
+        "subdivision": null
+      },
+      {
+        "code": "YO",
+        "name": "Yobe",
+        "subdivision": null
+      },
+      {
+        "code": "ZA",
+        "name": "Zamfara",
+        "subdivision": null
+      }
+    ]
+  },
+  {
+    "code2": "GH",
+    "code3": "GHA",
+    "name": "Ghana",
+    "capital": "Accra",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "states": [
+      {
+        "code": "AH",
+        "name": "Ashanti",
+        "subdivision": null
+      },
+      {
+        "code": "BA",
+        "name": "Brong-Ahafo",
+        "subdivision": null
+      },
+      {
+        "code": "CP",
+        "name": "Central",
+        "subdivision": null
+      },
+      {
+        "code": "EP",
+        "name": "Eastern",
+        "subdivision": null
+      },
+      {
+        "code": "AA",
+        "name": "Greater Accra",
+        "subdivision": null
+      },
+      {
+        "code": "NP",
+        "name": "Northern",
+        "subdivision": null
+      },
+      {
+        "code": "UE",
+        "name": "Upper East",
+        "subdivision": null
+      },
+      {
+        "code": "UW",
+        "name": "Upper West",
+        "subdivision": null
+      },
+      {
+        "code": "TV",
+        "name": "Volta",
+        "subdivision": null
+      },
+      {
+        "code": "WP",
+        "name": "Western",
+        "subdivision": null
+      }
+    ]
+  },
+  {
+    "code2": "KE",
+    "code3": "KEN",
+    "name": "Kenya",
+    "capital": "Nairobi",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "states": [
+      {
+        "code": "200",
+        "name": "Central",
+        "subdivision": null
+      },
+      {
+        "code": "300",
+        "name": "Coast",
+        "subdivision": null
+      },
+      {
+        "code": "400",
+        "name": "Eastern",
+        "subdivision": null
+      },
+      {
+        "code": "110",
+        "name": "Nairobi",
+        "subdivision": null
+      },
+      {
+        "code": "500",
+        "name": "North-Eastern",
+        "subdivision": null
+      },
+      {
+        "code": "600",
+        "name": "Nyanza",
+        "subdivision": null
+      },
+      {
+        "code": "700",
+        "name": "Rift Valley",
+        "subdivision": null
+      },
+      {
+        "code": "800",
+        "name": "Western",
+        "subdivision": null
+      }
+    ]
+  },
+  {
+    "code2": "RW",
+    "code3": "RWA",
+    "name": "Rwanda",
+    "capital": "Kigali",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "states": [
+      {
+        "code": "02",
+        "name": "Est",
+        "subdivision": null
+      },
+      {
+        "code": "03",
+        "name": "Nord",
+        "subdivision": null
+      },
+      {
+        "code": "04",
+        "name": "Ouest",
+        "subdivision": null
+      },
+      {
+        "code": "05",
+        "name": "Sud",
+        "subdivision": null
+      },
+      {
+        "code": "01",
+        "name": "Ville de Kigali",
+        "subdivision": null
+      }
+    ]
+  },
+  {
+    "code2": "ZA",
+    "code3": "ZAF",
+    "name": "South Africa",
+    "capital": "Pretoria",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "states": [
+      {
+        "code": "EC",
+        "name": "Eastern Cape",
+        "subdivision": null
+      },
+      {
+        "code": "FS",
+        "name": "Free State",
+        "subdivision": null
+      },
+      {
+        "code": "GT",
+        "name": "Gauteng",
+        "subdivision": null
+      },
+      {
+        "code": "NL",
+        "name": "KwaZulu-Natal",
+        "subdivision": null
+      },
+      {
+        "code": "LP",
+        "name": "Limpopo",
+        "subdivision": null
+      },
+      {
+        "code": "MP",
+        "name": "Mpumalanga",
+        "subdivision": null
+      },
+      {
+        "code": "NW",
+        "name": "North West",
+        "subdivision": null
+      },
+      {
+        "code": "NC",
+        "name": "Northern Cape",
+        "subdivision": null
+      },
+      {
+        "code": "WC",
+        "name": "Western Cape",
+        "subdivision": null
+      }
+    ]
+  }
+]
