@@ -3,60 +3,30 @@
 </div>
 <!-- Document Wrapper
     ============================================= -->
-<header id="navbar-spy" class="header header-1 header-light">
-    <nav id="primary-menu" class="navbar navbar-expand-lg navbar-light navbar-bordered">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img class="logo logo-light" src="assets/images/logo/logo-w-text.png" alt="Hyperspace Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+{{> navbar_main}}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <!-- Home Menu-->
-                    <li class="active">
-                        <a href="#" class="menu-item">Home</a>
-                    </li>
-                    <!-- li end -->
-
-                    <!-- Resources Menu-->
-                    <li class="">
-                        <a href="./resources" class="menu-item">Resources</a>
-                    </li>
-                    <!-- li end -->
-
-                    <!-- About Menu-->
-                    <li class="">
-                        <a href="./about.html" class="menu-item">About</a>
-                    </li>
-                    <!-- li end -->
-
-                    <!-- FAQs Menu-->
-                    <li class="">
-                        <a href="./faq.html" class="menu-item">FAQs</a>
-                    </li>
-                    <!-- li end -->
-                </ul>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </div>
-    </nav>
-</header>
-
-<section class="container">
+<section class="container reg">
     <div class="card">
-        <div class="card-header"></div>
+        <div class="card-header reg-card-header">
+            <h6 class="reg-title">Volunteer Registration</h6>
+        </div>
         <div class="card-body">
             <form>
                 <div class="row">
                     <div class="form-group col-6">
-                        <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="John Doe" />
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe" required/>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="email">Email address <span class="required">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required aria-required="true"/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="name">Github Profile</label>
+                        <input type="text" class="form-control" id="name" placeholder="https//github.com/john-doe" />
                     </div>
                     <div class="form-group col-6">
                         <label for="email">Email address</label>
@@ -93,7 +63,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="float-right s_btn btn--primary">Submit</button>
             </form>
         </div>
     </div>
@@ -107,7 +77,7 @@
             <div class="col-12 col-md-12 col-md-12 text--center footer--copyright">
                 <div class="copyright">
                     <a href="https://www.hyperspace.africa">hyperspace</a> <br />
-                    <span>© 2020</span>
+                    <span>© 2021</span>
                 </div>
             </div>
         </div>
