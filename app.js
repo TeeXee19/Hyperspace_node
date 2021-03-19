@@ -14,6 +14,11 @@ app.use(express.json())
 //sets our app to use the handlebars engine
 app.set('view engine', 'hbs')
 
+//req.body object can be accessed in our routes
+app.use(bodyParser.urlencoded({extended: true}))
+
+app.use(bodyParser.json())
+
 //Sets handlebars configurations (we will go through them later on)
 app.engine('hbs', handlebars({
   layoutsDir: __dirname + '/views/layouts',

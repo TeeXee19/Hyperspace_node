@@ -1,5 +1,6 @@
 module.exports = (app) => {
-    
+const volunteer = require('../src/controllers/app.controller.js');
+
    app.get('/', function (req, res) {
     res.render("index");
    });
@@ -24,8 +25,14 @@ module.exports = (app) => {
         res.render("volunteer");
     });
     
+    app.post('/volunteer', volunteer.save);
+    
     app.get('/terms_of_service', function (req, res) {
         res.render("terms_of_service");
+    });
+
+     app.get('/success', function (req, res) {
+        res.render("success");
     });
 
    
