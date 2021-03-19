@@ -12,8 +12,20 @@ exports.save = (req, res) => {
     console.log(req.body);
     let sql=lib.constructSql('volunteers',data);
     lib.saveData(sql, function(result){ 
-                    if(result.affectedRows==1){
-                        res.redirect('/success')                  
-                    }
-                })
+	    if(result.affectedRows==1){
+	        res.redirect('/success')                  
+	    }
+    })
+}
+
+exports.save_participant = (req, res) => {
+    let data=lib.participantInfo(req.body);
+    // util.inspect(data);
+    console.log(req.body);
+    let sql=lib.constructSql('participants',data);
+    lib.saveData(sql, function(result){ 
+	    if(result.affectedRows==1){
+	        res.redirect('/success')                  
+	    }
+    })
 }

@@ -29,6 +29,22 @@ module.exports= {
     data.created_at=new Date().toISOString().slice(0, 10);
     return data;
   },
+  
+  participantInfo:function(params) {
+    let data={};
+    data.name=params.name;
+    data.gender =params.gender;
+    data.phone_no = params.phone_no;
+    data.email=params.email;
+    data.location=params.location;
+    data.level=params.level;
+    data.info=params.info;
+    data.giturl=params.giturl;
+    data.description=params.description;
+
+    data.created_at=new Date().toISOString().slice(0, 10);
+    return data;
+  },
 
 
    

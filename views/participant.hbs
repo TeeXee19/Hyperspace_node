@@ -1,0 +1,123 @@
+<div class="preloader">
+    <div class="reverse-spinner"></div>
+</div>
+<!-- Document Wrapper
+    ============================================= -->
+{{> navbar_main}}
+
+<section class="container reg">
+    <div class="card">
+        <div class="card-header reg-card-header">
+            <h6 class="reg-title">Participant Registration</h6>
+        </div>
+        <div class="card-body">
+            <form method="POST" id="participant-form" novalidate="true">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="John Doe" required/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email address <span class="required">*</span></label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required aria-required="true"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="giturl">Github Profile</label>
+                        <input type="url" class="form-control" name="giturl" id="giturl" placeholder="https//github.com/john-doe" />
+                    </div>
+                    
+                    <div class="form-group col-md-4">
+                        <label for="phone_no">Phone Number (Kindly add country code) <span class="required">*</span></label>
+                        <input type="tel" class="form-control" name="phone_no" id="phone_no" placeholder="e.g 2347099002349" />
+                    </div>
+
+                    <div class="form-group col-md-4" style="margin-top: auto;">
+
+                        <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="gender">Gender <span class="required">*</span></label>
+                        </div>
+                        <select class="custom-select" name="gender" id="gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="input-group mb-3 col-md-6">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="location">Location</label>
+                        </div>
+                        <select class="custom-select" name="location" id="location" required>
+                            <option value="NG">Nigeria</option>
+                            <option value="GH">Ghana</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="KN">Kenya</option>
+                            <option value="SA">South Africa</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3 col-md-6">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="level">Level</label>
+                        </div>
+                        <select class="custom-select " name="level" id="level" required>
+                            <option value="Beginner">
+                                Beginner
+                            </option>
+                            <option value="Intermidiate">Intermidiate</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row mt-3">
+                    <div class="form-group col-md-6">
+                        <label for="info">How Did You Get to Know About Us?</label>
+                        <select class="custom-select " name="info" id="info" required>
+                            <option value="I_SM">
+                                Social Media
+                            </option>
+                            <option value="FND">Friend</option>
+                            <option value="BP">Family</option>
+                            <option value="COL">Colleague</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="form-group col-md-6">
+                        <label for="description">Why do you want to be part if Hyperspace<span >*</span></label>
+                        <textarea class="form-control" name="description" id="description" placeholder="In 200 words tell us why you would like to be part of the Hyperspace team." required>
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="float-right s_btn btn--primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <!-- Copyrights
+    ============================================= -->
+    <div class="footer--bar ftr">
+        <div class="row">
+            <div class="col-12 col-md-12 col-md-12 text--center footer--copyright">
+                <div class="copyright">
+                    <a href="https://www.hyperspace.africa">hyperspace</a> <br />
+                    <span>© 2021</span>
+                </div>
+            </div>
+        </div>
+        <!-- .row end -->
+    </div>
+    <!-- .footer-copyright end -->
+</footer>

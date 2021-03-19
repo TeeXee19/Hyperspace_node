@@ -1,5 +1,5 @@
 module.exports = (app) => {
-const volunteer = require('../src/controllers/app.controller.js');
+const ap = require('../src/controllers/app.controller.js');
 
    app.get('/', function (req, res) {
     res.render("index");
@@ -25,7 +25,13 @@ const volunteer = require('../src/controllers/app.controller.js');
         res.render("volunteer");
     });
     
-    app.post('/volunteer', volunteer.save);
+    app.post('/volunteer', ap.save);
+
+    app.get('/participant', function (req, res) {
+        res.render("participant");
+    });
+    
+    app.post('/participant', ap.save_participant);
     
     app.get('/terms_of_service', function (req, res) {
         res.render("terms_of_service");
