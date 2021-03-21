@@ -12,7 +12,7 @@
         </div>
         <div class="card-body">
           <div class="table-responsive">
-             <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+             <table class="table table-striped table-bordered dataTable" style="width:100%" id="mytable">
                 <thead>
                   <tr>
                     <th>ID</th>
@@ -50,10 +50,10 @@
     </div>
 </section>
 
-<footer>
+<footer class="footer--bar ftr-a">
     <!-- Copyrights
     ============================================= -->
-    <div class="footer--bar ftr">
+    <div >
         <div class="row">
             <div class="col-12 col-md-12 col-md-12 text--center footer--copyright">
                 <div class="copyright">
@@ -67,10 +67,9 @@
     <!-- .footer-copyright end -->
 </footer>
 
-
-<script>
-    $('mytable').dataTable( {
-          paginate: false,
-          scrollY: 300
-        } );
+<script >
+  $(document).ready(function() {
+    $('#mytable').DataTable();
+} );
 </script>
+
