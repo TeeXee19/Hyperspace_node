@@ -23,6 +23,8 @@
     <link href="../../assets/css/external.css" rel="stylesheet">
     <link href="../../assets/css/dataTable.bootstrap4.min.css" rel="stylesheet">
     <link href="../../assets/css/style.css" rel="stylesheet">
+    {{!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet"> --}}
+    <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 
 
@@ -43,7 +45,7 @@
 
         {{{body}}}
 
-        <script src="./assets/js/jquery-3.3.1.min.js"></script>
+        <script src=" https://code.jquery.com/jquery-3.5.1.js "></script>
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/functions.js"></script>
         <!-- RS5.0 Core JS Files -->
@@ -59,6 +61,19 @@
         <script src="./assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
         <!-- RS Configration JS Files -->
         <script src="./assets/js/rsconfig.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
+        <script>
+            // Call the dataTables jQuery plugin
+            $(document).ready(function() {
+                $('#mytable').DataTable();
+            });
+
+        </script>  
+
+
+
 </body>
 
 </html>

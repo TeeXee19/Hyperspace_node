@@ -2161,7 +2161,7 @@ ul.dot-list li:before {
 /*------------------------------------*\
     #PAGINATION
 \*------------------------------------*/
-.pagination {
+/*.pagination {
   display: block;
   margin: 0;
   -webkit-border-radius: 0;
@@ -2211,7 +2211,7 @@ ul.dot-list li:before {
   color: #ffffff;
   border-color: #0ecfac;
   box-shadow: none;
-}
+}*/
 
 /*------------------------------------*\
     #ALERT MESSAGE
@@ -10781,4 +10781,14 @@ footer .widget-instagram .insta-hover i {
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
+}
+
+.custom-select-sm {
+    height: calc(1.5em + 0.5rem + 2px);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 0px;
+    margin-bottom: 0px;
 }
