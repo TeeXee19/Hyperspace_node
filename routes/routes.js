@@ -1,5 +1,8 @@
 module.exports = (app) => {
 const ap = require('../src/controllers/app.controller.js');
+const connection = require('../config/db.config.js')
+
+
 
    app.get('/', function (req, res) {
     res.render("index");
@@ -27,9 +30,28 @@ const ap = require('../src/controllers/app.controller.js');
     
     app.post('/volunteer', ap.save);
 
+    // app.get('/volunteers', function (req, res) {
+    //     res.render("volunteers");
+    // });
+
+    app.get('/volunteers',(req, res) => {
+      let sql = "SELECT * FROM volunteers";
+      let query = connection.query(sql, (err, results) => {
+        if(err) throw err;
+        res.render('volunteers',{
+          results: results
+        });
+      });
+    });
+
+
     app.get('/participant', function (req, res) {
         res.render("participant");
     });
+
+    // app.get('/participant_view', function (req, res) {
+    //     res.render("participant");
+    // });
     
     app.post('/participant', ap.save_participant);
     

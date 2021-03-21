@@ -1,0 +1,76 @@
+<div class="preloader">
+    <div class="reverse-spinner"></div>
+</div>
+<!-- Document Wrapper
+    ============================================= -->
+{{> navbar_main}}
+
+<section class="container reg">
+    <div class="card">
+        <div class="card-header reg-card-header">
+            <h6 class="reg-title">Participant Registration</h6>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+             <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Location</th>
+                    <th>Role</th>
+                    <th>Info</th>
+                    <th>GitURL</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                   {{#each results}}
+                  <tr>
+                    <td>{{ id }}</td>
+                    <td>{{ name }}</td>
+                    <td>{{ email }}</td>
+                    <td>{{ phone_no }}</td>
+                    <td>{{ gender }}</td>
+                    <td>{{ location }}</td>
+                    <td>{{ role }}</td>
+                    <td>{{ info }}</td>
+                    <td>{{ giturl }}</td>
+                    <td>{{ description }}</td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+            </table>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <!-- Copyrights
+    ============================================= -->
+    <div class="footer--bar ftr">
+        <div class="row">
+            <div class="col-12 col-md-12 col-md-12 text--center footer--copyright">
+                <div class="copyright">
+                    <a href="https://www.hyperspace.africa">hyperspace</a> <br />
+                    <span>© 2021</span>
+                </div>
+            </div>
+        </div>
+        <!-- .row end -->
+    </div>
+    <!-- .footer-copyright end -->
+</footer>
+
+
+<script>
+    $('mytable').dataTable( {
+          paginate: false,
+          scrollY: 300
+        } );
+</script>

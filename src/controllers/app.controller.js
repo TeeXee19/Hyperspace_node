@@ -1,6 +1,8 @@
 const connection = require('../../config/db.config.js')
 const lib=require('./lib');
 const util = require('util');
+const api = require('../controllers/api.controller.js');
+
 
 // const Swal = require('sweetalert2')
 
@@ -28,4 +30,22 @@ exports.save_participant = (req, res) => {
 	        res.redirect('/success')                  
 	    }
     })
+}
+
+
+exports.volunteers = (req, res) => {
+    api.getVounteers(function(result) {
+        res.render('/volunteers', { 
+        	id: result.id, 
+        	name: result.name, 
+        	email: result.email, 
+        	phone_no: result.phone_no, 
+        	gender: results.gender,  
+        	role: results.role, 
+        	info: results.info,
+            giturl: results.giturl,
+            description: results.description, 
+            location: result.location});      
+    })
+	
 }
