@@ -49,9 +49,16 @@ const connection = require('../config/db.config.js')
         res.render("participant");
     });
 
-    // app.get('/participant_view', function (req, res) {
-    //     res.render("participant");
-    // });
+    app.get('/participants',(req, res) => {
+      let sql = "SELECT * FROM participants";
+      let query = connection.query(sql, (err, results) => {
+        if(err) throw err;
+        res.render('participants',{
+          results: results
+        });
+      });
+    });
+
     
     app.post('/participant', ap.save_participant);
     

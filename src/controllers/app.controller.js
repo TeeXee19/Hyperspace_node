@@ -49,3 +49,20 @@ exports.volunteers = (req, res) => {
     })
 	
 }
+
+exports.participants = (req, res) => {
+    api.getVounteers(function(result) {
+        res.render('/participants', { 
+            id: result.id, 
+            name: result.name, 
+            email: result.email, 
+            phone_no: result.phone_no, 
+            gender: results.gender,  
+            level: results.level, 
+            info: results.info,
+            giturl: results.giturl,
+            description: results.description, 
+            location: result.location});      
+    })
+    
+}
