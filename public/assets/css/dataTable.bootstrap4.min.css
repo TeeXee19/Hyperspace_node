@@ -5,7 +5,8 @@ table.dataTable{
 	max-width:none !important;
 	border-collapse:separate !important;
 	border-spacing:0;
-	border: 2px solid #8ea5b9 !important;
+	border: 1px solid #d1dbe3 !important;
+	border-radius: 8px;
 }
 	table.dataTable td,table.dataTable th{-webkit-box-sizing:content-box;box-sizing:content-box}
 	table.dataTable td.dataTables_empty,table.dataTable th.dataTables_empty{text-align:center}

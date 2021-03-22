@@ -2650,6 +2650,7 @@ body.modal-open .affix {
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
+  color: #0ecfac;
 }
 
 .table tbody + tbody {
@@ -10746,6 +10747,7 @@ footer .widget-instagram .insta-hover i {
   font-size: 20px;
   margin: 0;
   font-weight: bold;
+  color: #00dbad;
 }
 
 .reg-card-header {
