@@ -32,7 +32,7 @@ exports.save_participant = (req, res) => {
     })
 }
 
-
+/*
 exports.volunteers = (req, res) => {
     api.getVounteers(function(result) {
         res.render('/volunteers', { 
@@ -48,6 +48,14 @@ exports.volunteers = (req, res) => {
             location: result.location});      
     })
 	
+}*/
+exports.volunteers = (req, res) => {
+    api.getVounteers(function(result) {
+        console.log(result.id);
+        res.render('/volunteers', { 'data': result[0].id}); 
+        console.log('data');
+        })
+    
 }
 
 exports.participants = (req, res) => {

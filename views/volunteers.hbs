@@ -12,7 +12,7 @@
         </div>
         <div class="card-body">
           <div class="table-responsive">
-             <table class="table table-striped table-bordered dataTable" style="width:100%" id="mytable">
+             <table class="table table-striped   table-bordered dataTable" style="width:100%" id="mytable">
                 <thead>
                   <tr>
                     <th>ID</th>
@@ -31,6 +31,52 @@
                    {{#each results}}
                   <tr>
                     <td>{{ id }}</td>
+                    <td>{{ name }}</td>
+                    <td>{{ email }}</td>
+                    <td>{{ phone_no }}</td>
+                    <td>{{ gender }}</td>
+                    <td>{{ location }}</td>
+                    <td>{{ role }}</td>
+                    <td>{{ info }}</td>
+                    <td>{{ giturl }}</td>
+                    <td>{{ description }}</td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+            </table>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container reg">
+    <div class="card">
+        <div class="card-header reg-card-header">
+            <h6 class="reg-title">Volunteer Registration</h6>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+             <table class="table table-striped   table-bordered dataTable" style="width:100%" id="mytable">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Location</th>
+                    <th>Role</th>
+                    <th>Info</th>
+                    <th>GitURL</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                   {{#each data}}
+                  <tr>
+                    <td>{{ data.id }}</td>
                     <td>{{ name }}</td>
                     <td>{{ email }}</td>
                     <td>{{ phone_no }}</td>
