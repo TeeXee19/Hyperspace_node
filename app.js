@@ -5,7 +5,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const handlebars = require('express-handlebars')
 const favicon = require('serve-favicon');
-
+const PORT = process.env.PORT || 3000;
 
 app.use(favicon(__dirname + '/public/assets/images/favicon/favicon.png'));
 
@@ -33,6 +33,6 @@ app.use(express.static('public')) //used for stylesheets
 
 require('./routes/routes.js')(app)
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(PORT , function () {
   console.log('App is listening on port 3000!');
 });
