@@ -10928,7 +10928,8 @@ footer .widget-instagram .insta-hover i {
   width: 675px;
   text-align: justify;
   overflow-wrap: break-word;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .v_btn {
