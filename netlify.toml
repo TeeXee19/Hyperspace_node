@@ -1,5 +1,5 @@
 [build]
-  command = "npm install babel-cli && npm audit fix && npm install && npm run build"
+  command = "npm install -g babel-cli && npm audit fix && npm install && npm run build"
   node_version = "16.19.1"
   publish = "dist"
 
