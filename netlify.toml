@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm audit fix && npm run build"
   node_version = "18.14.0"
   publish = "dist"
 
